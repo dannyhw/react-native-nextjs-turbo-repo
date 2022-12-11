@@ -1,37 +1,27 @@
-import * as React from "react";
+import { styled } from "nativewind";
+import React from "react";
 import {
   TouchableOpacity,
-  StyleSheet,
   GestureResponderEvent,
   Text,
+  TouchableOpacityProps,
 } from "react-native";
 
 export interface ButtonProps {
   text: string;
   onClick?: (event: GestureResponderEvent) => void;
+  viewStyle?: TouchableOpacityProps["style"];
 }
 
-export function Button({ text, onClick }: ButtonProps) {
+function ButtonToStyle({ text, onClick, viewStyle }: ButtonProps) {
   return (
-    <TouchableOpacity style={styles.button} onPress={onClick}>
-      <Text style={styles.text}>{text}</Text>
+    <TouchableOpacity
+      className="bg-action-primary text-center pt-4 pb-4 pl-8 pr-8 text-overline rounded-lg"
+      style={viewStyle}
+      onPress={onClick}
+    >
+      <Text className="text-white">{text}</Text>
     </TouchableOpacity>
   );
 }
-
-const styles = StyleSheet.create({
-  button: {
-    maxWidth: 200,
-    textAlign: "center",
-    borderRadius: 10,
-    paddingTop: 14,
-    paddingBottom: 14,
-    paddingLeft: 30,
-    paddingRight: 30,
-    fontSize: "15px",
-    backgroundColor: "#2f80ed",
-  },
-  text: {
-    color: "white",
-  },
-});
+export const Button = styled(ButtonToStyle, { props: { viewStyle: true } });
