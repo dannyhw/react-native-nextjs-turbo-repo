@@ -118,15 +118,15 @@ importers:
       postcss-loader: ^7.0.1
       react: 18.2.0
       react-native: 0.70.5
-      tailwind-config: '*'
+      tailwind-config: workspace:*
       tailwindcss: ^3.2.1
-      tsconfig: '*'
+      tsconfig: workspace:*
       typescript: ^4.9.3
     dependencies:
       nativewind: 2.0.11_dpx3ezyh7vrtb4aufvxbx6obrq
       react: 18.2.0
       react-native: 0.70.5_ildacul6tjko7jf3wnaev3ii3q
-      tailwind-config: 0.1.2
+      tailwind-config: link:../tailwind-config
     devDependencies:
       '@babel/preset-react': 7.18.6_@babel+core@7.20.5
       '@storybook/addon-essentials': 6.5.14_ydjjrvt2j4wsj24cjsiqeyzy6y
@@ -142,7 +142,7 @@ importers:
       postcss: 8.4.20
       postcss-loader: 7.0.2_qxxfhhrl3yknjjmta266mo3u64
       tailwindcss: 3.2.4_postcss@8.4.20
-      tsconfig: 7.0.0
+      tsconfig: link:../tsconfig
       typescript: 4.9.4
 
 packages:
@@ -4164,14 +4164,6 @@ packages:
 
   /@types/source-list-map/0.1.2:
     resolution: {integrity: sha512-K5K+yml8LTo9bWJI/rECfIPrGgxdpeNbj+d53lwN4QjW1MCwlkhUms+gtdzigTeUyBr09+u8BwOIY3MXvHdcsA==}
-    dev: true
-
-  /@types/strip-bom/3.0.0:
-    resolution: {integrity: sha512-xevGOReSYGM7g/kUBZzPqCrR/KYAo+F0yiPc85WFTJa0MSLtyFTVTU6cJu/aV4mid7IffDIWqo69THF2o4JiEQ==}
-    dev: true
-
-  /@types/strip-json-comments/0.0.30:
-    resolution: {integrity: sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==}
     dev: true
 
   /@types/tapable/1.0.8:
@@ -14262,11 +14254,6 @@ packages:
     dev: true
     optional: true
 
-  /strip-bom/3.0.0:
-    resolution: {integrity: sha512-vavAMRXOgBVNF6nyEEmL3DBK19iRpDcoIwW+swQ+CbGiu7lju6t+JklA1MHweoWtadgt4ISVUsXLyDq34ddcwA==}
-    engines: {node: '>=4'}
-    dev: true
-
   /strip-eof/1.0.0:
     resolution: {integrity: sha512-7FCwGGmx8mD5xQd3RPUvnSpUXHM3BWuzjtpD4TXsfcZ9EL4azvVVUscFYwD9nx8Kh+uCBC00XBtAykoMHwTh8Q==}
     engines: {node: '>=0.10.0'}
@@ -14464,10 +14451,6 @@ packages:
   /synchronous-promise/2.0.16:
     resolution: {integrity: sha512-qImOD23aDfnIDNqlG1NOehdB9IYsn1V9oByPjKY1nakv2MQYCEMyX033/q+aEtYCpmYK1cv2+NTmlH+ra6GA5A==}
     dev: true
-
-  /tailwind-config/0.1.2:
-    resolution: {integrity: sha512-7ASrC14CermwwDh0kWeNGrmjZbL7L1fKLopqtSSpVjnwwZvrdo3iSVPWAlmHGkvdEZ7JtZ8UBq3p9qaT+it8+w==}
-    dev: false
 
   /tailwindcss/3.2.4_postcss@8.4.20:
     resolution: {integrity: sha512-AhwtHCKMtR71JgeYDaswmZXhPcW9iuI9Sp2LvZPo9upDZ7231ZJ7eA9RaURbhpXGVlrjX4cFNlB4ieTetEb7hQ==}
@@ -14852,15 +14835,6 @@ packages:
         optional: true
     dependencies:
       typescript: 4.9.4
-    dev: true
-
-  /tsconfig/7.0.0:
-    resolution: {integrity: sha512-vZXmzPrL+EmC4T/4rVlT2jNVMWCi/O4DIiSj3UHg1OE5kCKbk4mfrXc6dZksLgRM/TZlKnousKH9bbTazUWRRw==}
-    dependencies:
-      '@types/strip-bom': 3.0.0
-      '@types/strip-json-comments': 0.0.30
-      strip-bom: 3.0.0
-      strip-json-comments: 2.0.1
     dev: true
 
   /tslib/2.4.1:
