@@ -14,5 +14,9 @@
     "prettier": "^2.7.1",
     "turbo": "latest"
   },
+  "overrides": {
+    "metro": "0.73.1",
+    "metro-resolver": "0.73.1"
+  },
   "packageManager": "pnpm@7.18.1"
 }
