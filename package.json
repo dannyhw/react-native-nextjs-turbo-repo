@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "preinstall": "echo 'auto-install-peers=true\nnode-linker=hoisted\nstrict-peer-dependencies=false' > .npmrc",
     "dev": "turbo run dev",
     "build": "turbo run build",
     "clean": "turbo run clean && rm -rf node_modules",
